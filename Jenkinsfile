@@ -16,7 +16,7 @@ pipeline {
         stage('Execução dos testes') {
             steps {
                 echo 'Executando os testes...'
-                bat 'npm teste'
+                bat 'npm test'
             }
         }
     }
