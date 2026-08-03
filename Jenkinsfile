@@ -26,7 +26,7 @@ pipeline {
             echo 'Build e teste executados com sucesso'
         }
         failure {
-            echi 'Falha na execução do pipeline'
+            echo 'Falha na execução do pipeline'
         }
     }
 }
