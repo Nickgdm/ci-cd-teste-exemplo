@@ -49,7 +49,8 @@ context('Misc', () => {
         .its('stderr').should('be.empty')
 
       cy.exec('pwd')
-        .its('code').should('eq', 0)
+      .its('stdout')
+      .should('not.be.empty')
     }
   })
 
